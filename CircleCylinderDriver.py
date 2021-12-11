@@ -5,7 +5,7 @@ def main():
     print(f"Radius is {circle.getradius()}")
     print(f"Height is {circle.getheight()}")
     print(f"Color is{circle.getcolor()}")
-    print(f"Area is {'{:.2f}'.format(circle.getArea())}")
+    print(f"Area is {'{:.2f}'.format(circle.getarea())}")
     print(f"Volume is {'{:.2f}'.format(circle.getvolume())}")
 
     radius_new = float(input("Set new radius (in numbers): "))
