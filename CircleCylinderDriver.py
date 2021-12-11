@@ -16,6 +16,6 @@ def main():
     circle.setheight(height_new)
     circle.setcolor(color_new)
 
-    print(f"new attributes are: radius {circle.getradius()}, height {circle.getheight()} , color {circle.getcolor()}, area {circle.getArea():.2f}, volume {circle.getvolume():.2f} ")
+    print(f"new attributes are: radius {circle.getradius()}, height {circle.getheight()} , color {circle.getcolor()}, area {circle.getarea():.2f}, volume {circle.getvolume():.2f} ")
 
 main()
