@@ -1,8 +1,9 @@
 
-class circle:
-    def __init__(self,radius = 1.0, color = "red, "):
+import math
+class Circle:
+    def __init__(self,radius = 1.0, color = "red"):
         self.__radius = radius
-        self.__color == color
+        self.__color = color
     
     def getradius(self):
         return self.__radius
@@ -11,7 +12,7 @@ class circle:
         return self.__color
     
     def getarea(self):
-        return ((3.14) * (self.getradius() ** 2))
+        return ((math.pi) * (self.getradius() ** 2))
     
     def setcolor(self,color_new):
         self.__color = color_new
@@ -22,7 +23,7 @@ class circle:
     def settostring(self):
         return f"radius: {self.getradius()}" + "\n" + f"Color: {self.getcolor()}"
 
-class cylinder(circle):
+class Cylinder(Circle):
     def __init__(self, radius=1, color="Red", height = 1.0):
         super().__init__(radius=radius, color=color)
         self.__height = height
@@ -37,4 +38,4 @@ class cylinder(circle):
         return f"height: {self.getheight()}"
    
     def getvolume(self):
-        return (3.14)*((self.getradius())**2) * self.getheight()
+        return (math.pi)*((self.getradius())**2) * self.getheight()
